@@ -16,7 +16,7 @@ export default function TabTwoScreen() {
       headerImage={
         <IconSymbol
           size={310}
-          color="#808080"
+          color="#ae3f3f"
           name="chevron.left.forwardslash.chevron.right"
           style={styles.headerImage}
         />
@@ -27,31 +27,27 @@ export default function TabTwoScreen() {
           style={{
             fontFamily: Fonts.rounded,
           }}>
-          Explore
+          INICIO
         </ThemedText>
       </ThemedView>
-      <ThemedText>This app includes example code to help you get started.</ThemedText>
-      <Collapsible title="File-based routing">
+      <ThemedText>Aplicacion creada para la gestion de mantenimiento.</ThemedText>
+      <Collapsible title="MANUALES">
         <ThemedText>
-          This app has two screens:{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/explore.tsx</ThemedText>
-        </ThemedText>
-        <ThemedText>
-          The layout file in <ThemedText type="defaultSemiBold">app/(tabs)/_layout.tsx</ThemedText>{' '}
-          sets up the tab navigator.
+          <Image
+          source={require('@/assets/images/IMAGE.png')}
+          style={{ width: 100, height: 100, alignSelf: 'center' }}></Image>
         </ThemedText>
         <ExternalLink href="https://docs.expo.dev/router/introduction">
           <ThemedText type="link">Learn more</ThemedText>
         </ExternalLink>
       </Collapsible>
-      <Collapsible title="Android, iOS, and web support">
+      <Collapsible title="INFORMES">
         <ThemedText>
           You can open this project on Android, iOS, and the web. To open the web version, press{' '}
           <ThemedText type="defaultSemiBold">w</ThemedText> in the terminal running this project.
         </ThemedText>
       </Collapsible>
-      <Collapsible title="Images">
+      <Collapsible title="COMUNICADO">
         <ThemedText>
           For static images, you can use the <ThemedText type="defaultSemiBold">@2x</ThemedText> and{' '}
           <ThemedText type="defaultSemiBold">@3x</ThemedText> suffixes to provide files for
@@ -65,7 +61,7 @@ export default function TabTwoScreen() {
           <ThemedText type="link">Learn more</ThemedText>
         </ExternalLink>
       </Collapsible>
-      <Collapsible title="Light and dark mode components">
+      <Collapsible title="INDICADORES">
         <ThemedText>
           This template has light and dark mode support. The{' '}
           <ThemedText type="defaultSemiBold">useColorScheme()</ThemedText> hook lets you inspect
@@ -75,7 +71,7 @@ export default function TabTwoScreen() {
           <ThemedText type="link">Learn more</ThemedText>
         </ExternalLink>
       </Collapsible>
-      <Collapsible title="Animations">
+      <Collapsible title="REGISTRO">
         <ThemedText>
           This template includes an example of an animated component. The{' '}
           <ThemedText type="defaultSemiBold">components/HelloWave.tsx</ThemedText> component uses

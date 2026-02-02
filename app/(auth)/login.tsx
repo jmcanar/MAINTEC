@@ -1,19 +1,25 @@
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
 import { useRouter } from 'expo-router';
 
-export default function HomeScreen() {
+export default function LoginScreen() {
   const router = useRouter();
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>INICIO 👋</Text>
-      <Text style={styles.subtitle}>Vista protegida</Text>
+      <Text style={styles.title}>MAINTEC</Text>
+
+      <TextInput style={styles.input} placeholder="Correo electrónico" />
+      <TextInput style={styles.input} placeholder="Contraseña" secureTextEntry />
 
       <TouchableOpacity
-        style={styles.logout}
-        onPress={() => router.replace('/(auth)/login')}
+        style={styles.button}
+        onPress={() => router.replace('/(tabs)')}
       >
-        <Text style={styles.logoutText}>Cerrar sesión</Text>
+        <Text style={styles.buttonText}>Iniciar sesión</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity onPress={() => router.push('/(auth)/register')}>
+        <Text style={styles.link}>¿No tienes cuenta? Regístrate</Text>
       </TouchableOpacity>
     </View>
   );
